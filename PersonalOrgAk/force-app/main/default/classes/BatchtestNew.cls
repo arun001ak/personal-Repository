@@ -13,6 +13,7 @@ public class BatchtestNew implements Database.Batchable<SObject> {
         List<Account> accounts = (List<Account>)scope;
         for (Account acc : accounts) {
             System.debug('Batch processed Account: ' + acc.Name + ' (' + acc.Id + ')');
+            system.debug('test');
         }
     }
 
