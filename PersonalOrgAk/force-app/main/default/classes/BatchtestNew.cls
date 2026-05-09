@@ -7,6 +7,7 @@ public class BatchtestNew implements Database.Batchable<SObject> {
 
     public Database.QueryLocator start(Database.BatchableContext bc) {
         return Database.getQueryLocator(query);
+        system.debug('new line');
     }
 
     public void execute(Database.BatchableContext bc, List<SObject> scope) {
